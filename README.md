@@ -24,6 +24,7 @@ Swift Package to provide Closure based functionality for Macintosh App Developme
 
 ### SlamButton Magic
 
+SlamButton is a closure based version of standard NSButton. It supports the SlamActionable protocol, which can attaches a closure to the control. Pressing the button does not invoke a Target-Action, but instead executes the closure.
 
 
 ## License

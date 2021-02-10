@@ -6,9 +6,6 @@
 //  Copyright © 2021 Steve Sheets. All rights reserved.
 
 import Foundation
-import Cocoa
-import SwiftSpellBook
-import CocoaSpellBook
 
 // MARK: Structure
 
