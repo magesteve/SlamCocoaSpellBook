@@ -9,6 +9,7 @@
 import Foundation
 import Cocoa
 import SwiftSpellBook
+import CocoaSpellBook
 
 // MARK: - Class
 

@@ -8,6 +8,7 @@
 
 import Cocoa
 import SwiftSpellBook
+import CocoaSpellBook
 
 
 /// Closure based imave view (NSSwitch)

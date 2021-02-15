@@ -8,11 +8,15 @@
 
 import Cocoa
 import SwiftSpellBook
+import CocoaSpellBook
 
 /// Slam Based input style Text Field (NSTextField)
 public class SlamTextField: NSTextField, NSTextFieldDelegate, SlamTextInputable {
     
+    
     // MARK: - SlamTextInputable Requirements
+    
+    public var slamTextState:String { self.stringValue }
     
     public var slamTextChangedEvent: SwiftSpellBook.StringClosure?
 
