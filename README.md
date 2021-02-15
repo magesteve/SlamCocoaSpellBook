@@ -18,7 +18,7 @@ Swift Package to provide Closure based functionality for Macintosh App Developme
 
 ### Repository
 
-    https://github.com/magesteve/PreferencesSpellBook.git
+    https://github.com/magesteve/SlamCocoaSpellBook.git
 
 ## Components
 
@@ -36,4 +36,4 @@ SlamCheckbox & SlamSwitch are closures based version of CheckBox (NSButton) & NS
 
 ## License
 
-PreferencesSpellBook is available as open source under the terms of the [MIT](https://github.com/magesteve/SlamCocoaSpellBook/blob/main/LICENSE) License.
+SlamCocoaSpellBook is available as open source under the terms of the [MIT](https://github.com/magesteve/SlamCocoaSpellBook/blob/main/LICENSE) License.
