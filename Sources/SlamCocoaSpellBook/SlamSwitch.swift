@@ -15,13 +15,13 @@ import SwiftSpellBook
 public class SlamSwitch: NSSwitch, SlamSwitchable {
     
 
-    // MARK: SlamSwitchable Requirement
+    // MARK: - SlamSwitchable Requirement
         
     public var slamSwitchState: Bool { (state == .on) }
 
     public var slamSwitchChangedEvent: SwiftSpellBook.BoolClosure?
 
-    // MARK: Lifecycle Functions
+    // MARK: - Lifecycle Functions
 
     override init(frame frameRect: NSRect) {
        super.init(frame: frameRect)
@@ -37,7 +37,7 @@ public class SlamSwitch: NSSwitch, SlamSwitchable {
        self.action = #selector(pressedButtonAction)
     }
 
-    // MARK: Action Functions
+    // MARK: - Action Functions
 
     /// Action to invoked with user presses button.
     /// - Parameter sender: Object that invoked the function
