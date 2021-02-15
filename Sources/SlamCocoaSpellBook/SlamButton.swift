@@ -10,16 +10,16 @@ import Foundation
 import Cocoa
 import SwiftSpellBook
 
-// MARK: Class
+// MARK: - Class
 
 /// Closure based button (NSButton)
 public class SlamButton: NSButton, SlamActionable {
 
-    // MARK: SlamActionable
+    // MARK: - SlamActionable
     
     public var slamActionClosure: SwiftSpellBook.SimpleClosure?
     
-    // MARK: Lifecycle Functions
+    // MARK: - Lifecycle Functions
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -43,7 +43,7 @@ public class SlamButton: NSButton, SlamActionable {
         }
     }
     
-    // MARK: Action Functions
+    // MARK: - Action Functions
     
     /// Action to invoked with user presses button.
     /// - Parameter sender: Object that invoked the function

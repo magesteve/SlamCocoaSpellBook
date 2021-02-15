@@ -26,6 +26,13 @@ Swift Package to provide Closure based functionality for Macintosh App Developme
 
 SlamButton is a closure based version of standard NSButton. It supports the SlamActionable protocol, which can attaches a closure to the control. Pressing the button does not invoke a Target-Action, but instead executes the closure.
 
+### SlamTextField Magic
+
+SlamTextField is a closure based version of NSTextField. It supports the SlamTextInputable protocol, which can attaches a closure to the field. Changing the text in the field invokes the closure.
+
+### SlamCheckbox & SlamSwitch Magic
+
+SlamCheckbox & SlamSwitch are closures based version of CheckBox (NSButton) & NSSwitch. It supports the SlamSwitchable protocol, which can attaches two closures to the field. One closure returns the state of the control, while changing the state of the control invokes the other closure.
 
 ## License
 
