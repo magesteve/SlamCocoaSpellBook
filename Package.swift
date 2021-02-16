@@ -12,14 +12,15 @@ let package = Package(
             targets: ["SlamCocoaSpellBook"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/magesteve/CocoaSpellBook.git", from: "1.0.0"),
+        .package(url: "https://github.com/magesteve/SwiftSpellBook.git", from: "1.0.11"),
+        .package(url: "https://github.com/magesteve/CocoaSpellBook.git", from: "1.0.10"),
     ],
     targets: [
         .target(
             name: "SlamCocoaSpellBook",
-            dependencies: ["CocoaSpellBook"]),
+            dependencies: ["SwiftSpellBook","CocoaSpellBook"]),
         .testTarget(
             name: "SlamCocoaSpellBookTests",
-            dependencies: ["CocoaSpellBook","SlamCocoaSpellBook"]),
+            dependencies: ["SwiftSpellBook","CocoaSpellBook","SlamCocoaSpellBook"]),
     ]
 )

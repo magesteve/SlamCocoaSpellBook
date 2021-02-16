@@ -15,10 +15,28 @@ import CocoaSpellBook
 @available(OSX 10.15, *)
 public class SlamSwitch: NSSwitch, SlamSwitchable {
     
+    // MARK: - Static Function
+    
+    /// Make a slam checkbox with title, and action closure.
+    public static func MakeSlamSwitch(state: Bool = false, changeAction: @escaping SwiftSpellBook.BoolClosure) -> SlamSwitch {
+        let aSwitch = SlamSwitch(frame: .zero)
+        
+        aSwitch.slamSwitchChangedEvent = changeAction
+        aSwitch.slamSwitchState = state
+
+        return aSwitch
+    }
 
     // MARK: - SlamSwitchable Requirement
         
-    public var slamSwitchState: Bool { (state == .on) }
+    public var slamSwitchState: Bool {
+        get {
+            (state == .on)
+        }
+        set(newState) {
+            state = newState ? .on : .off
+        }
+    }
 
     public var slamSwitchChangedEvent: SwiftSpellBook.BoolClosure?
 

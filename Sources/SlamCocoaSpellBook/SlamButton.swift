@@ -15,6 +15,18 @@ import CocoaSpellBook
 
 /// Closure based button (NSButton)
 public class SlamButton: NSButton, SlamActionable {
+    
+    // MARK: - Static Function
+    
+    /// Make a slam button with title, and action closure.
+    public static func MakeSlamButton(title: String, action: @escaping SwiftSpellBook.SimpleClosure) -> SlamButton {
+        let aButton = SlamButton(frame: .zero)
+        
+        aButton.slamActionClosure = action
+        aButton.title = title
+        
+        return aButton
+    }
 
     // MARK: - SlamActionable
     

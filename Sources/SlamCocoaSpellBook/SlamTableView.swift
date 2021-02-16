@@ -15,6 +15,15 @@ import CocoaSpellBook
 /// Simpliest style closure based Table View
 public class SlamTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSource {
 
+    // MARK: - Static Function
+    
+    /// Make a slam checkbox with title, and action closure.
+    public static func MakeSlamTableView() -> SlamTableView {
+        let aTableView = SlamTableView(frame: .zero)
+        
+        return aTableView
+    }
+
 // MARK: - Properties
     
     /// Optional closure to return number of items in table
