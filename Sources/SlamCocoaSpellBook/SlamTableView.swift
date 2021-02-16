@@ -18,8 +18,10 @@ public class SlamTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSou
     // MARK: - Static Function
     
     /// Make a slam checkbox with title, and action closure.
-    public static func MakeSlamTableView() -> SlamTableView {
+    public static func MakeSlamTableView(changeAction: SwiftSpellBook.IntClosure?) -> SlamTableView {
         let aTableView = SlamTableView(frame: .zero)
+        
+        aTableView.selectionChangedEvent = changeAction
         
         return aTableView
     }
