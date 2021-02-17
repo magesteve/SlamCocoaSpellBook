@@ -41,7 +41,7 @@ public class SlamTextField: NSTextField, NSTextFieldDelegate, SlamTextInputable 
     
     // MARK: - Lifecycle
 
-    public override init(frame frameRect: NSRect) {
+    override public init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
         delegate = self

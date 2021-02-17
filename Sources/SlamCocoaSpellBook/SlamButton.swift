@@ -34,10 +34,11 @@ public class SlamButton: NSButton, SlamActionable {
     
     // MARK: - Lifecycle Functions
     
-    override init(frame frameRect: NSRect) {
+    override public init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
         self.setButtonType(.momentaryPushIn)
+        self.isBordered = true;
         self.allowsMixedState = false
         if self.target == nil {
             self.target = self
@@ -49,6 +50,7 @@ public class SlamButton: NSButton, SlamActionable {
         super.init(coder: coder)
         
         self.setButtonType(.momentaryPushIn)
+        self.isBordered = true;
         self.allowsMixedState = false
         if self.target == nil {
             self.target = self

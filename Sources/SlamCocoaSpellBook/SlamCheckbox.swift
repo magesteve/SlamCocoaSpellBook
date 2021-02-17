@@ -43,7 +43,7 @@ public class SlamCheckbox: NSButton, SlamSwitchable {
 
     // MARK: - Lifecycle Functions
     
-    override init(frame frameRect: NSRect) {
+    override public init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
         self.setButtonType(.switch)

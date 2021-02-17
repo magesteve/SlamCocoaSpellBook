@@ -45,7 +45,7 @@ public class SlamTableView: NSTableView, NSTableViewDelegate, NSTableViewDataSou
 
 // MARK: - Lifecycle Methods
     
-    override init(frame frameRect: NSRect) {
+    override public init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
         dataSource = self
