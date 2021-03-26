@@ -12,8 +12,8 @@ let package = Package(
             targets: ["SlamCocoaSpellBook"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/magesteve/SwiftSpellBook.git", from: "1.0.11"),
-        .package(url: "https://github.com/magesteve/CocoaSpellBook.git", from: "1.0.10"),
+        .package(url: "https://github.com/magesteve/CocoaSpellBook.git", from: "1.1.0"),
+        .package(url: "https://github.com/magesteve/SwiftSpellBook.git", from: "1.1.0"),
     ],
     targets: [
         .target(
