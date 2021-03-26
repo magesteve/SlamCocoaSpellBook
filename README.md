@@ -34,6 +34,10 @@ SlamTextField is a closure based version of NSTextField. It supports the SlamTex
 
 SlamCheckbox & SlamSwitch are closures based version of CheckBox (NSButton) & NSSwitch. It supports the SlamSwitchable protocol, which can attaches two closures to the field. One closure returns the state of the control, while changing the state of the control invokes the other closure.
 
+### SlamTableView Magic
+
+SlamTableView are closures based version of NSTableView, to draws Cell Base views (simple text contents). It supports either a closure to provide Array of Strings, or a set of closure to provide size of table (number of cells) & text content of each cell. Other clousure can be used to track the current selected cell.
+
 ### NSStackView Spell Magic
 
 NSStackView has extension to NSStackView for creating and filling vertical StackViews.  For example, spellAddStandard adds a given view to the StackView, positioning it in the most common method.  Future spells will add Slam views to the stack.
