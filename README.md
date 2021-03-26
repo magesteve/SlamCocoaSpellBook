@@ -42,6 +42,10 @@ SlamTableView are closures based version of NSTableView, to draws Cell Base view
 
 NSStackView has extension to NSStackView for creating and filling vertical StackViews.  For example, spellAddStandard adds a given view to the StackView, positioning it in the most common method.  Future spells will add Slam views to the stack.
 
+## Demo App
+
+Sample code using this SpellBook can be found in the open-source Cocoa App [CocoaGrimoire](https://github.com/magesteve/CocoaGrimoire). Other SpellBooks by the author are also demonstrated there.
+
 ## License
 
 SlamCocoaSpellBook is available as open source under the terms of the [MIT](https://github.com/magesteve/SlamCocoaSpellBook/blob/main/LICENSE) License.

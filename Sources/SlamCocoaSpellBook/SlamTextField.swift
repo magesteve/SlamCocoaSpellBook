@@ -15,7 +15,7 @@ public class SlamTextField: NSTextField, NSTextFieldDelegate, SlamTextInputable 
     
     // MARK: - Static Function
     
-    /// Make a slam checkbox with title, and action closure.
+    /// Make a slam textsfield with title, and action closure.
     public static func MakeSlamTextField(text: String = "", changeAction: @escaping SwiftSpellBook.StringClosure) -> SlamTextField {
         let aTextField = SlamTextField(frame: .zero)
         

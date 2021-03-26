@@ -8,6 +8,8 @@
 
 import Foundation
 import Cocoa
+import SwiftSpellBook
+import CocoaSpellBook
 
 // MARK: - Extension NSStackView
 
@@ -74,7 +76,34 @@ public extension NSStackView {
 
         return aLabel
     }
+    
+    /// Make a slam button with title, and action closure, add it to stack centered
+    @discardableResult func spellAddButton(title: String, action: @escaping SwiftSpellBook.SimpleClosure) -> SlamButton {
+        let view = SlamButton.MakeSlamButton(title: title, action: action)
+        spellAddStandard(view: view)
+        return view
+    }
 
+    /// Make a slam checkbox with title, and action closure, add it to stack left side.
+    @discardableResult func spellAddCheckbox(title: String, state: Bool = false, changeAction: @escaping SwiftSpellBook.BoolClosure) -> SlamCheckbox {
+        let view = SlamCheckbox.MakeSlamCheckbox(title: title, state: state, changeAction: changeAction)
+        spellAddStandard(view: view, leftLabel: true)
+        return view
+    }
+
+    /// Make a slam switch with title, and action closure, add it to stack left side.
+    @discardableResult func spellAddSwitch(title: String, state: Bool = false, changeAction: @escaping SwiftSpellBook.BoolClosure) -> SlamSwitch {
+        let view = SlamSwitch.MakeSlamSwitch(state: state, changeAction: changeAction)
+        spellAddStandard(view: view, label: title, leftLabel: true)
+        return view
+    }
+
+    /// Make a slam textfield with title, and action closure,  add it to stack.
+    @discardableResult func spellAddTextField(text: String = "", title: String = "", changeAction: @escaping SwiftSpellBook.StringClosure) -> SlamTextField {
+        let view = SlamTextField.MakeSlamTextField(text: text, changeAction: changeAction)
+        spellAddStandard(view: view, label: title, leftLabel: true)
+        return view
+    }
 }
 
 
